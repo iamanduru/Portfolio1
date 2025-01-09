@@ -39,6 +39,10 @@ body {
     flex-direction: column;
 }
 
+.left-section a {
+    color: var(--text-color);
+    text-decoration: none;
+}
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
