@@ -109,3 +109,85 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//Carousel Cards
+document.addEventListener('DOMContentLoaded', () => {
+    // Get all carousel containers (for both UI/UX and Development sections)
+    const carousels = document.querySelectorAll('.carousel__container');
+
+    carousels.forEach(carouselContainer => {
+        const carousel = carouselContainer.querySelector('.projects__grid.carousel');
+        const prevButton = carouselContainer.querySelector('.carousel-button.prev');
+        const nextButton = carouselContainer.querySelector('.carousel-button.next');
+
+        if (!carousel || !prevButton || !nextButton) return;
+
+        // Function to scroll the carousel
+        const scroll = (direction) => {
+            const cardWidth = carousel.querySelector('.project-card').offsetWidth;
+            // Add the gap between cards (30px from CSS)
+            const scrollAmount = direction === 'next' ? (cardWidth + 30) : -(cardWidth + 30);
+
+            carousel.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        };
+
+        // Button click handlers with correct direction
+        nextButton.addEventListener('click', () => scroll('next'));
+        prevButton.addEventListener('click', () => scroll('prev'));
+
+        // Update button visibility based on scroll position
+        const updateButtons = () => {
+            const isAtStart = carousel.scrollLeft <= 0;
+            const isAtEnd = Math.abs(
+                carousel.scrollWidth - carousel.clientWidth - carousel.scrollLeft
+            ) <= 1;
+
+            // Update button states
+            prevButton.style.opacity = isAtStart ? '0.5' : '1';
+            prevButton.style.pointerEvents = isAtStart ? 'none' : 'all';
+
+            nextButton.style.opacity = isAtEnd ? '0.5' : '1';
+            nextButton.style.pointerEvents = isAtEnd ? 'none' : 'all';
+        };
+
+        // Add scroll event listener
+        carousel.addEventListener('scroll', updateButtons);
+        
+        // Initial button state
+        updateButtons();
+
+        // Touch swipe functionality with improved threshold
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const swipeThreshold = 50; // minimum distance for swipe
+
+        carousel.addEventListener('touchstart', e => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+
+        carousel.addEventListener('touchend', e => {
+            touchEndX = e.changedTouches[0].screenX;
+            const swipeDistance = touchStartX - touchEndX;
+
+            if (Math.abs(swipeDistance) >= swipeThreshold) {
+                if (swipeDistance > 0) {
+                    scroll('next');
+                } else {
+                    scroll('prev');
+                }
+            }
+        }, { passive: true });
+
+        // Optional: Add keyboard navigation
+        carousel.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                scroll('prev');
+            } else if (e.key === 'ArrowRight') {
+                scroll('next');
+            }
+        });
+    });
+});
