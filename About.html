@@ -4,132 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitchelle Anduru - UI/UX Designer & Front-end Engineer</title>
-    <style>
-        :root {
-            --background-color: #FCE4E4;
-            --text-color: #4B000F;
-            --accent-color: #000;
-            --link-hover-color: #F88379;
-            --font-family: 'Arial', sans-serif;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: var(--text-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            padding: 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 2rem;
-        }
-
-        .left-section {
-            padding-right: 8rem;
-        }
-
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--background-color);
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            margin-bottom: 1.5rem;
-            color: var(--background-color);
-            font-weight: normal;
-        }
-
-        .subtitle {
-            color: var(--background-color);
-            font-size: 1rem;
-            margin-bottom: 2rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            color: var(--background-color);
-        }
-
-        .navigation {
-            margin-top: 8rem;
-        }
-
-        .navigation__links {
-            list-style: none;
-        }
-
-        .navigation__links li {
-            margin-bottom: 1.5rem;
-        }
-
-        .navigation__links a {
-            color: var(--background-color);
-            text-decoration: none;
-            font-size: 1.1rem;
-            position: relative;
-            padding-left: 2rem;
-            transition: font-size 0.3s ease, text-decoration 0.3s ease; 
-        }
-
-        .navigation__links a:hover {
-            font-size: 1.2rem; 
-            text-decoration: underline; 
-            color: var(--link-hover-color);
-        }
-
-        .social-links {
-            margin-top: 8rem;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .social-links a {
-            color: var(--background-color);
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-        .social-links a:hover {
-            color: var(--link-hover-color);
-        }
-
-        .content {
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-        }
-
-        .content p {
-            margin-bottom: 0;
-        }
-
-        #cursor__canvas {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <canvas id="cursor__canvas"></canvas>
+    <canvas id="cursor-canvas"></canvas>
     <div class="container">
         <div class="left-section">
             <h1>Mitchelle Anduru</h1>
@@ -151,102 +29,60 @@
             </div>
         </div>
 
-        <div class="content">
-            <p>I'm a UI/UX Designer and Front-End Engineer passionate about crafting intuitive, pixel-perfect digital experiences that seamlessly blend thoughtful design with efficient code. With expertise in tools like Figma, React, and Tailwind CSS, I excel at transforming complex ideas into user-friendly interfaces and functional solutions that drive impact.</p>
-            
-            <p>Currently, I focus on projects that challenge both design and technical expertise, delivering inclusive, high-performance digital products. Whether it's creating sleek, user-centered websites or building robust web applications, every project reflects a balance of creativity, precision, and usability.</p>
-            
-            <p>In previous roles, I've worked on diverse projects ranging from blogging platforms to team collaborations on accessible, inclusive design solutions. My experience includes developing for startups, contributing to team-driven assignments, and crafting solutions for businesses and communities.</p>
-            
-            <p>When not designing or coding, I enjoy chasing personal records at the gym, immersing myself in a great book, or exploring ways to refine time management. Always eager for the next big challenge, I'm ready to collaborate and bring innovative ideas to life.</p>
+        <div class="content__wrapper">
+            <div class="about__section">
+                <div class="content">
+                    <p>I'm a UI/UX Designer and Front-End Engineer passionate about crafting intuitive, pixel-perfect digital experiences that seamlessly blend thoughtful design with efficient code. With expertise in tools like Figma, React, and Tailwind CSS, I excel at transforming complex ideas into user-friendly interfaces and functional solutions that drive impact.</p>
+                    
+                    <p>Currently, I focus on projects that challenge both design and technical expertise, delivering inclusive, high-performance digital products. Whether it's creating sleek, user-centered websites or building robust web applications, every project reflects a balance of creativity, precision, and usability.</p>
+                    
+                    <p>In previous roles, I've worked on diverse projects ranging from blogging platforms to team collaborations on accessible, inclusive design solutions. My experience includes developing for startups, contributing to team-driven assignments, and crafting solutions for businesses and communities.</p>
+                    
+                    <p>When not designing or coding, I enjoy chasing personal records at the gym, immersing myself in a great book, or exploring ways to refine time management. Always eager for the next big challenge, I'm ready to collaborate and bring innovative ideas to life.</p>
+                </div>
+            </div>
+    
+            <div class="experience__section">
+                <div class="experience__container">
+                    <div class="experience__item">
+                        <div class="experience__header" data-target="somto__details">
+                            <span class="company">SOMTO</span>
+                            <span class="divider">|</span>
+                            <span class="role">Volunteer</span>
+                        </div>
+                        <div class="experience__details" id="somto__details">
+                            <div class="date">June 2023 - August 2024</div>
+                            <ul>
+                                <li>Organized and coordinated a free eye check-up camp in Kisumu, managing logistics and medical professionals</li>
+                                <li>Developed and conducted technical training programs in HTML, CSS, and JavaScript for young girls in Kibra</li>
+                                <li>Redesigned and enhanced SOMTO's website and newsletter systems to improve user experience and functionality</li> 
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="experience__item">
+                        <div class="experience__header" data-target="spiderbit__details">
+                            <span class="company">Spiderbit</span>
+                            <span class="divider">|</span>
+                            <span class="role">Web Developer & Design Intern</span>
+                        </div>
+                        <div class="experience__details" id="spiderbit__details">
+                            <div class="date">September 2024 - December 2024</div>
+                            <ul>
+                                <li>Designed and developed user-centric websites using modern web technologies (HTML, CSS, JavaScript)</li>
+                                <li>Collaborated with cross-functional teams to align designs with business objectives and user needs</li>
+                                <li>Implemented responsive and accessible interfaces optimized for various devices</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <script>
-        //To initialize the canvas
-        const canvas = document.getElementById('cursor__canvas');
-        const ctx = canvas.getContext('2d');
-
-        //Setting canvas size to window size
-        function setCanvasSize() {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        }
-
-        setCanvasSize();
-        window.addEventListener('resize', setCanvasSize);
 
 
-        //Particles array to store the ripple point
-        const particle = [];
-        const numberOfParticles = 15;
-        const mousePosition = { x: 0, y: 0};
-        let mouseSpeed = 0;
-        let lastMousePosition = { x: 0, y: 0};
-
-        //Particle class to manage each ripple point
-        class Particle {
-            constructor() {
-                this.reset();
-            }
-             reset() {
-                this.x = mousePosition.x;
-                this.y = mousePosition.y;
-                this.size = Math.random() * 3 + 1;
-                this.speedX = Math.random() * 2 - 1;
-                this.speedY = Math.random() * 2 -1;
-                this.life = 1;
-                this.opacity = 1;
-             }
-
-             update() {
-                this.x += this.speedX * mouseSpeed;
-                this.y += this.speedY * mouseSpeed;
-                this.life -= 0.01;
-                this.opacity = this.life;
-
-                if (this.life <= 0 ) {
-                    this.reset();
-                }
-             }
-
-             draw() {
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fillStyle = `rgba(248, 131, 121, ${this.opacity * 0.5})`;
-                ctx.fill();
-             }
-        }
-
-        //To initialize particles
-        for (let i = 0; i < numberOfParticles; i++) {
-                particles.push(new Particle());
-        }
-
-        //Tracking the mouse movement
-        document.addEventListener('mousemove', (e) => {
-            mouseSpeed = Math.hypot(e.clientX - lastMousePosition.x, e.clientY - lastMousePosition.y) * 0.1;
-            mouseSpeed = Math.min(mouseSpeed, 4);
-
-            lastMousePosition.x = mousePosition.x;
-            lastMousePosition.y = mousePosition.y;
-            mousePosition.x = e.clientX;
-            mousePosition.y = e.clientY;
-        });
-
-        //Animated loop
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            particles.forEach(particles => {
-                particle.update();
-                particle.draw();
-            });
-
-            requestAnimationFrame(aniamte);
-        }
-
-        animate();
-
+    <script src="index.js">
+        
     </script>
 </body>
 </html>

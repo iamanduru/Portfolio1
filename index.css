@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
 :root {
     --background-color: #FCE4E4;
     --primary-color: #F88379;
@@ -18,6 +20,7 @@ body {
     max-width: 1728px;
     margin: 0 auto;
     animation: pageLoad 0.5s ease-out;
+    font-family: "League Spartan", serif;
 }
 
 /* Navigation bar*/

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+:root {
+    --text-color: #FCE4E4;
+    --background-color: #4B000F;
+    --accent-color: #000;
+    --link-hover-color: #F88379;
+    --font-family: 'League Spartan', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-family: var(--font-family);
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    padding: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 4rem;
+}
+
+.left-section {
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 8rem);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: normal;
+}
+
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    max-width: 400px;
+}
+
+.navigation {
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+
+.navigation__links {
+    list-style: none;
+}
+
+.navigation__links li {
+    margin-bottom: 1.5rem;
+}
+
+.navigation__links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navigation__links a:hover {
+    color: var(--link-hover-color);
+    padding-left: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-links a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--link-hover-color);
+}
+
+/* Right content section */
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.about__section {
+    margin-bottom: 4rem;
+}
+
+.about__section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+/* Experience section */
+.experience__section {
+    margin-top: 2rem;
+}
+
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.experience__item {
+    border-left: 2px solid var(--text-color);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.experience__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+}
+
+.company {
+    font-weight: 600;
+}
+
+.role {
+    color: var(--link-hover-color);
+}
+
+.experience__details {
+    margin-top: 1rem;
+    display: none;
+}
+
+.experience__details.active {
+    display: block;
+}
+
+.experience__details .date {
+    color: var(--link-hover-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.experience__details ul {
+    list-style: none;
+}
+
+.experience__details li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.experience__details li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--link-hover-color);
+}
+
+#cursor-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
