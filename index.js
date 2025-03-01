@@ -216,3 +216,35 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 100 * index);
     });
 });
+
+// JavaScript for education section toggle functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all education header elements
+    const educationHeaders = document.querySelectorAll('.education__header');
+    
+    // Add click event listener to each header
+    educationHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            // Get the target details element
+            const targetId = this.getAttribute('data-target');
+            const targetDetails = document.getElementById(targetId);
+            
+            // Toggle active class on the details element
+            targetDetails.classList.toggle('active');
+            
+            // Optional: Close other open details sections
+            const allDetails = document.querySelectorAll('.education__details');
+            allDetails.forEach(detail => {
+                if (detail.id !== targetId && detail.classList.contains('active')) {
+                    detail.classList.remove('active');
+                }
+            });
+        });
+    });
+    
+    // Optional: Open first education item by default
+    const firstEducationDetails = document.querySelector('.education__details');
+    if (firstEducationDetails) {
+        firstEducationDetails.classList.add('active');
+    }
+});

@@ -254,6 +254,97 @@ h2 {
     }
 }
 
+/*Education*/
+/* Education & Certifications section */
+.education__section {
+    margin-top: 2rem;
+}
+
+.education__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.education__item {
+    border-left: 2px solid var(--text-color);
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.education__item::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--link-hover-color);
+    left: -6px;
+    top: 10px;
+}
+
+.education__header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.institution {
+    font-weight: 600;
+}
+
+.degree {
+    color: var(--link-hover-color);
+}
+
+.education__details {
+    margin-top: 1rem;
+    display: none;
+}
+
+.education__details.active {
+    display: block;
+}
+
+.education__details .date {
+    color: #64ffda;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.education__details ul {
+    list-style: none;
+}
+
+.education__details li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.education__details li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--link-hover-color);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .education__header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+    
+    .education__header .divider {
+        display: none;
+    }
+}
 /*Projects*/
 .projects__section {
     padding: 100px 20px;
