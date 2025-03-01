@@ -205,6 +205,7 @@ h2 {
     color: var(--text-color);
 }
 
+
 .tech__stack__container {
     display: flex;
     flex-direction: column;
@@ -222,6 +223,7 @@ h2 {
     color: var(--link-hover-color);
     margin-bottom: 0.8rem;
 }
+
 
 .tech__stack__items {
     display: flex;
@@ -266,6 +268,8 @@ h2 {
 .section__header h2 {
     font-size: clamp(26px, 5vw, 32px);
     font-weight: 700;
+    position: relative;
+    padding-bottom: 10px
 }
 
 .projects__container {
@@ -281,6 +285,19 @@ h2 {
 .projects__category h3 {
     font-size: 24px;
     margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.projects__category h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--link-hover-color);
 }
 
 .projects__grid {
@@ -318,6 +335,7 @@ h2 {
     min-width: 330px;
     max-width: 330px;
     margin-right: 20px;
+    height: 420px; 
 }
 
 .carousel-button {
@@ -340,6 +358,7 @@ h2 {
 
 .carousel-button:hover {
     background: rgba(100, 255, 218, 0.2);
+    transform: translateY(-50%) scale(1.1)
 }
 
 .carousel-button.prev {
@@ -364,10 +383,20 @@ h2 {
 .project__card {
     border-radius: 8px;
     padding: 25px;
-    transition: transform 0.2s ease, box-shadow 0.2 ease;
+    transition: all 0.3s ease;
     height: 100%;
     border: 1px solid #64ffda;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
+
+.project-card:hover::before {
+    height: 100%;
+}
+
 .project-card:hover,
 .project__card:hover {
     transform: translateY(-5px);
@@ -463,29 +492,12 @@ h2 {
 }
 
 /*Responsive Design*/
+/* Responsive Design */
 @media (max-width: 768px) {
     .projects__section {
         padding: 60px 20px;
     }
 
-    .projects__grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    }
-}
-
-@media (max-width: 480px) {
-    .project-card,
-    .project__card {
-        padding: 20px;
-    }
-
-    .project-card__content h4,
-    .project__card__content h4 {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 768px) {
     .carousel__container {
         padding: 0 30px;
         margin: 0 -30px;
@@ -494,6 +506,7 @@ h2 {
     .projects__grid.carousel .project-card {
         min-width: 280px;
         max-width: 280px;
+        height: 400px;
     }
 }
 
@@ -506,5 +519,14 @@ h2 {
     .projects__grid.carousel .project-card {
         min-width: 250px;
         max-width: 250px;
+        height: 380px;
+    }
+    
+    .project-card {
+        padding: 20px;
+    }
+
+    .project-card__content h4 {
+        font-size: 18px;
     }
 }
