@@ -191,3 +191,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+//Add Javascript for tech stack item hover animations
+document.addEventListener('DOMContentLoaded', function() {
+    const techItems = document.querySelectorAll('.tech-item');
+
+    techItems.forEach(item => {
+        item.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+        });
+
+        item.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = 'none';
+        });
+    });
+
+    //Optional: Add a subtle animation to tech items on page load
+    techItems.forEach((item, index) => {
+        setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+        }, 100 * index);
+    });
+});
