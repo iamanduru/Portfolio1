@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitchelle Anduru - UI/UX Designer & Front-end Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <canvas id="cursor-canvas"></canvas>
+    <div class="projects__container">
+        <header class="projects__header">
+            <h1>My Portfolio Projects</h1>
+            <p>A collection of my work across different domains, from UI/UX designs to full-stack development projects.</p>
+            
+            <!-- New Feature: Project Carousel -->
+            <div class="projects__carousel">
+                <button class="carousel__nav carousel__prev">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="carousel__container">
+                    <div class="carousel__track">
+                        <!-- Carousel items will be populated dynamically with featured projects -->
+                    </div>
+                    <div class="carousel__indicators"></div>
+                </div>
+                <button class="carousel__nav carousel__next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </header>
+        
+        <!-- New Feature: Category Sections -->
+        <div class="projects__categories">
+            <section class="category__section" id="featured-projects">
+                <div class="category__header">
+                    <h2 class="category__title">Featured Projects</h2>
+                    <a href="#" class="category__view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="projects__grid featured__grid">
+                    <!-- Featured Project - Heart on Sleeve -->
+                    <div class="project__card featured__project" data-category="uiux">
+                        <div class="featured__badge">Featured Project</div>
+                        <div class="project__image">
+                            <img src="./img/case1.png" alt="Heart on Sleeve Project Preview">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__type">UI/UX Design</div>
+                            <h3 class="project__title">Heart on Sleeve</h3>
+                            <p class="project__description">A responsive, boho-inspired blogging platform designed to empower writers and foster community. The project focuses on creating an intuitive and visually appealing interface that encourages content creation and user engagement.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">UI Design</span>
+                                <span class="project__tag">User Research</span>
+                                <span class="project__tag">Prototyping</span>
+                                <span class="project__tag">Figma</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://www.figma.com/design/7R2qCrxWDCuVBWSh9pkOKT/Heart-on-a-sleeve?node-id=394-961&t=BufrAxTz2bKhD8xz-1" class="project-link" target="_blank" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project__link view__details" data-project="heart-on-sleeve" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="category__section" id="uiux-projects">
+                <div class="category__header">
+                    <h2 class="category__title">UI/UX Design</h2>
+                    <a href="#" class="category__view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="projects__grid">
+                    <!-- Uber New Features -->
+                    <div class="project__card" data-category="uiux">
+                        <div class="project__image">
+                            <img src="./img/uber.png" alt="Uber New Features Preview">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__type">UI/UX Design</div>
+                            <h3 class="project__title">Uber New Features</h3>
+                            <p class="project__description">The redesign features collaborative rewards, driver feedback, and a maternal care "Linda Mama Ride," fostering fairness, usability, and satisfaction for both drivers and riders.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">UI Design</span>
+                                <span class="project__tag">User Research</span>
+                                <span class="project__tag">Prototyping</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://www.figma.com/design/lt2Hr9RQbTlIV17AEEmURk/Uber-Case-study?node-id=2-3&t=s0r991z9Pfz7BBlk-0" class="project-link" target="_blank" title="View Project">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project__link view__details" data-project="uber-features" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="category__section" id="development-projects">
+                <div class="category__header">
+                    <h2 class="category__title">Web Development</h2>
+                    <a href="#" class="category__view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="projects__grid">
+                    <!-- FitClub -->
+                    <div class="project__card" data-category="development">
+                        <div class="project__image">
+                            <img src="./img/case2.png" alt="FitClub Project Preview">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__type">Web Development</div>
+                            <h3 class="project__title">FitClub</h3>
+                            <p class="project__description">FitClub is a web app that helps users achieve fitness goals with tailored workouts, nutrition guidance, and progress tracking. Built with React.js and Tailwind CSS, it's under active development with new features on the way.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Next.js</span>
+                                <span class="project__tag">Tailwind CSS</span>
+                                <span class="project__tag">TypeScript</span>
+                                <span class="project__tag">React.js</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/iamanduru/fitclub" class="project__link" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="comingsoon.html" class="project__link" target="_blank" title="Visit Site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project__link view__details" data-project="fitclub" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Construction Platform -->
+                    <div class="project__card" data-category="development">
+                        <div class="project__image">
+                            <img src="./img/construction.jpg" alt="Construction Platform Preview">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__type">Web Development</div>
+                            <h3 class="project__title">Construction Platform</h3>
+                            <p class="project__description">A full-featured e-commerce solution with product management, user authentication, shopping cart, and payment integration built on the MERN stack.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">MongoDB</span>
+                                <span class="project__tag">Express</span>
+                                <span class="project__tag">React</span>
+                                <span class="project__tag">Node.js</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" class="project__link" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project__link" target="_blank" title="Visit Site">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project__link view__details" data-project="construction" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="category__section" id="programming-projects">
+                <div class="category__header">
+                    <h2 class="category__title">Programming</h2>
+                    <a href="#" class="category__view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="projects__grid">
+                    <!-- Python Projects -->
+                    <div class="project__card" data-category="programming">
+                        <div class="project__image">
+                            <img src="./img/python.jpg" alt="Python Projects Preview">
+                        </div>
+                        <div class="project__content">
+                            <div class="project__type">Programming</div>
+                            <h3 class="project__title">Python Projects</h3>
+                            <p class="project__description">A curated collection of Python applications and scripts showcasing problem-solving, data analysis, and automation skills. Explore diverse projects, from algorithms to mini-applications.</p>
+                            <div class="project__tags">
+                                <span class="project__tag">Python</span>
+                                <span class="project__tag">Data Analysis</span>
+                                <span class="project__tag">Automation</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/iamanduru/PythonProjects/tree/main" class="project__link" target="_blank" title="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project__link view__details" data-project="python-projects" title="View Details">
+                                    <i class="fas fa-info-circle"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Search and Explore Section -->
+        <section class="projects__search">
+            <div class="search__wrapper">
+                <h2>Looking for something specific?</h2>
+                <div class="search__form">
+                    <input type="text" class="search__input" placeholder="Search projects by keyword, technology, or name...">
+                    <button class="search__button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="popular__searches">
+                    <span class="popular__label">Popular searches:</span>
+                    <button class="popular__keyword">React</button>
+                    <button class="popular__keyword">UI/UX</button>
+                    <button class="popular__keyword">Python</button>
+                    <button class="popular__keyword">TypeScript</button>
+                </div>
+            </div>
+        </section>
+        
+        <div class="pagination">
+            <button class="page__btn active">1</button>
+            <button class="page__btn">2</button>
+            <button class="page__btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Project Modal -->
+    <div class="project__modal__overlay">
+        <div class="project__modal">
+            <button class="modal__close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal__content">
+                <!-- Dynamic content will be loaded here -->
+            </div>
+        </div>
+    </div>
+    
+    <!-- Back to top button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
