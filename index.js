@@ -466,35 +466,7 @@ function initializeModals() {
                 }
             ]
         },
-        'fitclub': {
-            title: 'FitClub',
-            image: './img/case2.png',
-            description: `
-                <p>FitClub is a comprehensive web application built to help users achieve their fitness goals through personalized workout plans, nutrition guidance, and progress tracking.</p>
-                <p>Built with React.js and styled with Tailwind CSS, the application utilizes a modern tech stack including:</p>
-                <ul>
-                    <li>Next.js for server-side rendering and optimized performance</li>
-                    <li>TypeScript for type safety and improved developer experience</li>
-                    <li>Tailwind CSS for rapid and responsive UI development</li>
-                    <li>User authentication with JWT and secure data storage</li>
-                </ul>
-                <p>The application features workout plan generators based on user goals, equipment availability, and fitness level. It also includes nutrition tracking, progress visualization with charts, and community features for motivation.</p>
-                <p>This project is currently under active development with new features being added regularly.</p>
-            `,
-            tags: ['Next.js', 'Tailwind CSS', 'TypeScript', 'React.js', 'Responsive Design'],
-            links: [
-                {
-                    icon: 'fab fa-github',
-                    url: 'https://github.com/iamanduru/fitclub',
-                    text: 'View Code'
-                },
-                {
-                    icon: 'fas fa-external-link-alt',
-                    url: 'comingsoon.html',
-                    text: 'Visit Site'
-                }
-            ]
-        },
+        
         'construction': {
             title: 'Construction Platform',
             image: './img/construction.jpg',
@@ -548,7 +520,84 @@ function initializeModals() {
                     text: 'View Repository'
                 }
             ]
-        }
+        },
+        'Cursor-ripple': {
+            title: 'Cursor Ripples',
+            image: './img/cursor.png',
+            description: `
+                <p>This is a lightweight and interactive cursor trail effect built using HTML5, CSS, and JavaScript. With its visually appealing particle system, this project offers both creativity and inspiration for those interested in UI/UX design and web animation.</p>
+                <p>The collection includes:</p>
+                <ul>
+                   <li><strong>Canvas Animation Basics:</strong> Learn how to use the HTML5 <canvas> element and its 2D context for drawing and animation.</li>
+                    <li><strong>Particle System Design:</strong> Understand how particle systems work, including concepts like lifespan, opacity, and movement dynamics.</li>
+                    <li><strong>Mouse Interaction:</strong> Discover how to capture and utilize real-time mouse movements for creating interactive effects.</li>
+                    <li><strong>JavaScript Animation Techniques:</strong> Master the requestAnimationFrame API for smooth and efficient animations.</li>
+                    <li><strong>Responsive Design:</strong> Learn how to make canvas animations adaptable to different screen sizes.</li>
+                    <li><strong>Styling with CSS Variables:</strong> Explore the use of CSS variables (:root) to manage theming and maintain consistent styling.</li>
+                </ul>
+                <p>Each implementation includes clear documentation and example usage to help developers quickly integrate the effect into their projects.</p>
+            `,
+            tags: ['HTML', 'CSS', 'Javascript', ],
+            links: [
+                {
+                    icon: 'fas fa-external-link-alt',
+                    url: 'https://iamanduru.github.io/cursor-ripple/',
+                    text: 'View Website'
+                }
+            ]
+        },
+        'Mpesa-Auth': {
+            title: 'Cursor Ripples',
+            image: './img/mpesa.png',
+            description: `
+                <p>This is a secure and robust M-Pesa authentication system designed for a film streaming platform, ensuring only verified paying users can access content while preventing unauthorized link sharing.
+                 The system integrates M-Pesa's STK Push and Paybill/Till Number functionalities for seamless payment processing and access control.</p>
+                <p>The collection includes:</p>
+                <ul>
+                   <li><strong>Payment Integration:</strong> Seamless integration with Safaricom's M-Pesa API for real-time payment processing using STK Push and Paybill/Till Number.</li> 
+                   <li><strong>Access Control:</strong> Unique, time-sensitive access links tied to a single device or IP address, ensuring one-time viewing sessions.</li> 
+                   <li><strong>Multi-Layered Security:</strong> Cross-verification of M-Pesa payment phone numbers, UUIDv4-based access tokens, and optional Multi-Factor Authentication (MFA).</li> 
+                   <li><strong>Real-Time Monitoring:</strong> An admin dashboard for tracking transactions, access attempts, and detecting suspicious activities.</li> 
+                   <li><strong>Scalable Backend:</strong> Built with Node.js and Express.js, ensuring high performance and reliability.</li> 
+                   <li><strong>Database Management:</strong> MONGODB for structured data storage, including user details, transactions, and access logs.</li> 
+                   <li><strong>Interactive Frontend:</strong> A user-friendly interface built with HTML, CSS, and JavaScript for film selection, payment, and viewing.</li>
+                </ul>
+                <p>This full-stack solution is designed to provide a frictionless payment experience, enhanced security, and controlled access, making it ideal for modern film streaming platforms.</p>
+            `,
+            tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Express.js', 'PostgreSQL', 'M-Pesa API', 'UUIDv4', 'JWT', 'Redis', 'Axios', 'Webhooks'],
+            links: [
+                {
+                    icon: 'fas fa-external-link-alt',
+                    url: 'https://github.com/iamanduru/MPesa-Auth',
+                    text: 'View Repository'
+                }
+            ]
+        },
+
+        'cafe-menu': {
+            title: 'Artisan Cafe Menu',
+            image: './img/coffee.png',
+            description: `
+                <p>A modern, responsive, and interactive digital menu designed for cafes and restaurants. This project leverages cutting-edge web technologies to deliver a seamless and engaging user experience.</p>
+                <p>The collection includes:</p>
+                <ul>
+                   <li><strong>Fully Responsive Design:</strong> Optimized for desktops, tablets, and mobile devices.</li>
+                    <li><strong>Dark Mode Support:</strong> Users can toggle between light and dark themes.</li>
+                    <li><strong>Interactive UI:</strong> Hover effects, expandable descriptions, and smooth animations.</li>
+                    <li><strong>Elegant Aesthetic:</strong> Carefully curated typography and color schemes for a polished look.</li>
+                    <li><strong>Accessibility Compliance:</strong> Ensures usability for all audiences with semantic HTML and WCAG-compliant contrast ratios.</li>
+                </ul>
+                <p>Each implementation includes clear documentation and example usage to help developers quickly integrate the effect into their projects.</p>
+            `,
+            tags: ['HTML', 'CSS', 'Javascript', 'ES6+'],
+            links: [
+                {
+                    icon: 'fas fa-external-link-alt',
+                    url: 'https://iamanduru.github.io/coffee-menu/',
+                    text: 'View Website'
+                }
+            ]
+        },
     };
     
     // Event listener for opening modals
