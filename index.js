@@ -308,10 +308,10 @@ function initializeCarousel() {
             link: "https://www.figma.com/design/7R2qCrxWDCuVBWSh9pkOKT/Heart-on-a-sleeve"
         },
         {
-            title: "FitClub",
-            description: "A web app that helps users achieve fitness goals with tailored workouts, nutrition guidance, and progress tracking.",
-            image: "./img/case2.png",
-            link: "comingsoon.html"
+            title: "M-Pesa Auth",
+            description: "This is a secure and robust M-Pesa authentication system designed for a film streaming platform, ensuring only verified paying users can access content while preventing unauthorized link sharing.The system integrates M-Pesa's STK Push and Paybill/Till Number functionalities for seamless payment processing and access control.",
+            image: "./img/mpesa.png",
+            link: "https://github.com/iamanduru/MPesa-Auth"
         },
         {
             title: "Uber New Features",
@@ -547,7 +547,7 @@ function initializeModals() {
             ]
         },
         'Mpesa-Auth': {
-            title: 'Cursor Ripples',
+            title: 'M-Pesa Auth',
             image: './img/mpesa.png',
             description: `
                 <p>This is a secure and robust M-Pesa authentication system designed for a film streaming platform, ensuring only verified paying users can access content while preventing unauthorized link sharing.
@@ -594,6 +594,31 @@ function initializeModals() {
                 {
                     icon: 'fas fa-external-link-alt',
                     url: 'https://iamanduru.github.io/coffee-menu/',
+                    text: 'View Website'
+                }
+            ]
+        },
+
+        'animated-sample': {
+            title: 'Animated Sample',
+            image: './img/animated.png',
+            description: `
+                <<p>An engaging and interactive showcase of Animate.css, demonstrating various animations to enhance UI elements. This project provides:</p>
+            <ul>
+                <li><strong>Live Animation Previews:</strong> Instantly visualize different animation effects.</li>
+                <li><strong>Customizable Animations:</strong> Adjust speed, delay, and iteration count dynamically.</li>
+                <li><strong>Interactive UI:</strong> Click-to-animate elements for real-time testing.</li>
+                <li><strong>Fully Responsive Design:</strong> Works seamlessly on desktops, tablets, and mobile devices.</li>
+                <li><strong>Minimal Setup:</strong> No additional JavaScript libraries required.</li>
+            </ul>
+            <p>Developers can quickly integrate Animate.css animations into their projects using this showcase.</p>
+
+            `,
+            tags: ['HTML', 'CSS', 'Javascript', 'ES6+', 'Animated css'],
+            links: [
+                {
+                    icon: 'fas fa-external-link-alt',
+                    url: 'https://iamanduru.github.io/Animated/',
                     text: 'View Website'
                 }
             ]
