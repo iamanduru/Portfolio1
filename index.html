@@ -3,80 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitchelle Anduru - UI/UX Designer & Full-Stack Engineer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="index.css">
+    <title>Mitchelle Anduru - UI/UX Designer & Front-end Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <nav class="main__nav">
-        <!-- Social Media Links -->
-        <div class="social__links">
-            <a href="http://tiktok.com/@heyy.anduru" target="_blank"><i class="bi bi-tiktok"></i></a>
-            <a href="https://github.com/iamanduru" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/mitchelle-anduru-1b488822b/" target="_blank"><i class="bi bi-linkedin"></i></a>
-        </div>
-        
-        <!-- Main Navigation -->
-        <ul class="nav__links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-        </ul>
-    </nav>
+    <canvas id="cursor-canvas"></canvas>
+    <div class="container">
+        <div class="left-section">
+            <h1>Mitchelle Anduru</h1>
+            <h2>UI/UX Designer & Full-stack Engineer</h2>
+            <p class="subtitle">I design and build intuitive, pixel-perfect, and user-centered digital experiences for the web.</p>
 
-    <main class="hero__section">
-        <div class="avatar">
-            <img src="img/blank.png" alt="Profile Avatar">
+            <nav class="navigation">
+                <ul class="navigation__links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="social-links">
+                <a href="http://tiktok.com/@heyy.anduru"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                <a href="https://github.com/iamanduru"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            </div>
         </div>
 
-        <div class="hero__content">
-            <h1>I'm a <span>UI/UX Designer</span> & <span>Full-Stack Engineer</span></h1>
-            <p>I design and develop digital experiences that not only look great but work seamlessly for you and your audience.
-                My goal is to understand your vision and transform it into impactful designs and functional solutions that elevate your brand and connect
-                 with your users.</p>
-            <a href="contact.html" class="cta-link">
-                <button class="cta__button">Let's build</button>
-            </a>
-        </div>
-    </main>
-
+        <div class="content__wrapper">
+            <div class="about__section" id="about">
+                <div class="content">
+                    <p>Wagwan! I’m a Full-Stack Engineer & UI/UX Designer who codes like an architect and designs like your favorite app wasn’t frustrating.</p>
+                    
+                    <p>With a cross-functional toolkit in React, Node.js, MySQL, Figma, and Tailwind CSS, I build scalable web apps that don’t just work—they make sense. I care deeply about inclusive design, clean architecture, and writing code your future self won’t want to fight.</p>
+                    <p>When I’m not turning chaos into user-first interfaces, I’m mentoring budding techies (some fresh out of tutorial hell), hosting a podcast about mental health and emotional debugging, or trying to beat my personal best at the gym—and in time management (still in beta).</p>
+                    <p>Let’s just say: if it’s digital, I want to make it smarter, smoother, and slightly more human.Let’s build things that don’t make users rage-quit.</p>
+                </div>
+            </div>
     
-
-    <footer class="footer">
-        <div class="footer__content">
-            <div class="footer__top">
-                <a href="#home" class="footer__logo">Anduru</a>
-                
-                <div class="footer__social">
-                    <a href="https://github.com/iamanduru" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="andurumitchelleanyango@gmail.com" aria-label="Email">
-                        <i class="bi bi-envelope"></i>
-                    </a> 
+            <div class="experience__section" id="experiences">
+                <div class="experience__container">
+                    <div class="experience__item">
+                        <div class="experience__header" data-target="somto__details">
+                            <span class="company">SOMTO – Karoline Aadland’s Minnestiftelse </span>
+                            <span class="divider">|</span>
+                            <span class="role">Volunteer</span>
+                        </div>
+                        <div class="experience__details" id="somto__details">
+                            <div class="date">June 2023 - August 2024</div>
+                            <ul>
+                                <li>Organized and coordinated a free eye check-up camp in Kisumu, managing logistics and medical professionals</li>
+                                <li>Developed and conducted technical training programs in HTML, CSS, and JavaScript for young girls in Kibra</li>
+                                <li>Redesigned and enhanced SOMTO's website and newsletter systems to improve user experience and functionality</li> 
+                            </ul>
+                        </div>
+                    </div>
+    
+                    <div class="experience__item">
+                        <div class="experience__header" data-target="spiderbit__details">
+                            <span class="company">Spiderbit</span>
+                            <span class="divider">|</span>
+                            <span class="role">Web Developer & Design Intern</span>
+                        </div>
+                        <div class="experience__details" id="spiderbit__details">
+                            <div class="date">September 2024 - December 2024</div>
+                            <ul>
+                                <li>Built and maintained responsive websites aligned with modern UI/UX standards.</li>
+                                <li>Collaborated with product teams to deliver user-first features and micro-interactions.</li>
+                                <li>Conducted iterative usability testing to drive continuous improvement and user satisfaction.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="experience__item">
+                        <div class="experience__header" data-target="vfr__details">
+                            <span class="company">Vision Fund Rwanda</span>
+                            <span class="divider">|</span>
+                            <span class="role">Software Developer Intern</span>
+                        </div>
+                        <div class="experience__details" id="vfr__details">
+                            <div class="date">April 2025 - To Current</div>
+                            <ul>
+                                <li>Developed and deployed a full-stack Inventory Management System, improving asset tracking efficiency.</li>
+                                <li>Migrated backend architecture from MongoDB to MySQL, optimizing database performance and query speed.</li>
+                                <li>Designed secure authentication and user access controls using Node.js, Express.js, and JWT.</li>
+                                <li>Built intuitive, mobile-responsive frontend interfaces using React and Tailwind CSS.</li>
+                                <li>Currently leading development of a Payroll Management System automating salary, tax, and deduction workflows.</li>
+                                <li>Supported IT operations by configuring hardware and system setups for internal staff.</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="footer__nav">
-                <a href="./About.html">About</a>
-                <a href="./About.html">Experience</a>
-                <a href="./About.html">Skills</a>
-                <a href="./projects.html">Projects</a>
-                <a href="./contact.html">Contact</a> 
+            <div class="tech__stack__section" id="tech-stack">
+                <h2 class="tech__stack__title">Tech Stack & Tools</h2>
+                <div class="tech__stack__container">
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">Languages & Frameworks</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">HTML5</span>
+                            <span class="tech__item">CSS2</span>
+                            <span class="tech__item">Javascript(ES6+)</span>
+                            <span class="tech__item">TypeScript</span>
+                            <span class="tech__item">Python</span>
+                            <span class="tech__item">Java</span>
+                        </div>
+                    </div>
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">Frontend Development</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">React.js</span>
+                            <span class="tech__item">Next.js</span>
+                            <span class="tech__item">TailwindCSS</span>
+                            <span class="tech__item">Responsive Design</span>
+                        </div>
+                    </div>
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">Backend & Database</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">MySQL</span>
+                            <span class="tech__item">MongoDB</span>
+                            <span class="tech__item">Node.js</span>
+                            <span class="tech__item">FastAPI</span>
+                            <span class="tech__item">RESTful APIs</span>
+                            <span class="tech__item">Express.js</span>
+                            <span class="tech__item">Oracle</span>
+                            <span class="tech__item">Prisma ORM</span>
+                        </div>
+                    </div>
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">Clouds & DevOps</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">AWS</span>
+                            <span class="tech__item">Docker</span>
+                            <span class="tech__item">GitHub</span>
+                        </div>
+                    </div>
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">UI/UX Design</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">Figma</span>
+                            <span class="tech__item">Wireframing</span>
+                            <span class="tech__item">Prototyping</span>
+                            <span class="tech__item">Inclusive Design</span>
+                            <span class="tech__item">Usability Testing</span>
+                        </div>
+                    </div>
+                    <div class="tech__stack__category">
+                        <div class="tech__stack__category__title">Quality Assurance & Testing</div>
+                        <div class="tech__stack__items">
+                            <span class="tech__item">Manual Testing</span>
+                            <span class="tech__item">Test Case Design</span>
+                            <span class="tech__item">Bug Tracking</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="footer__bottom">
-                <p>© 2025. Designed & Built with ❤️</p>
-                <a href="contact.html" class="cta-btn">Let's Connect</a>
-            </div>
+            <section class="education__section section" id="education">
+                <div class="section__title">
+                    <h2>Education and Certifications</h2>
+                </div>
+                <div class="education__container">
+                    <div class="education__item">
+                        <div class="education__header" data-target="auca__details">
+                            <span class="institution">Adventist University of Central Africa (AUCA)</span>
+                            <span class="divider">|</span>
+                            <span class="degree">Bachelor of Information Technology (Software Engineering)</span>
+                        </div>
+                        <div class="education__details" id="auca__details">
+                            <div class="date">2022- Present</div>
+                            <ul>
+                                <li>Focusing on software design principles, data structures, and algorithm development</li>
+                                <li>Participating in collaborative programming projects and hackathons</li>
+                                <li>Developing full-stack applications using modern frameworks and technologies</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education__item">
+                        <div class="education__header" data-target="moringa__details">
+                            <span class="institution">Moringa School</span>
+                            <span class="divider">|</span>
+                            <span class="degree">Product Design UI/UX</span>
+                        </div>
+                        <div class="education__details" id="moringa__details">
+                            <div class="date">July 2024 - Jan 2025</div>
+                            <ul>
+                                <li>Mastering user research methodologies and information architecture</li>
+                                <li>Creating user-centered designs using industry-standard tools</li>
+                                <li>Implementing responsive design principles and accessibility standards</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education__item">
+                        <div class="education__header" data-target="cisco__details">
+                            <span class="institution">Cisco</span>
+                            <span class="divider">|</span>
+                            <span class="degree">Computer Networking Essentials</span>
+                        </div>
+                        <div class="education__details" id="cisco__details">
+                            <div class="date">January 2024 - April 2024</div>
+                            <ul>
+                                <li>Gained hands-on experience with network configuration and troubleshooting</li>
+                                <li>Studied TCP/IP protocols and network security fundamentals</li>
+                                <li>Applied routing and switching concepts in practical lab environments</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="education__item">
+                        <div class="education__header" data-target="aws__details">
+                            <span class="institution">Amazon Web Services</span>
+                            <span class="divider">|</span>
+                            <span class="degree">AWS Certified Cloud Practitioner</span>
+                        </div>
+                        <div class="education__details" id="aws__details">
+                            <div class="date">2023</div>
+                            <ul>
+                                <li>Mastered cloud computing concepts and AWS core services</li>
+                                <li>Learned cloud security best practices and compliance frameworks</li>
+                                <li>Developed understanding of cloud economics and billing models</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-    </footer>
+    </div>
 
 
+    <script src="index.js">
+        
+    </script>
 </body>
 </html>
