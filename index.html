@@ -3,236 +3,313 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mitchelle Anduru - UI/UX Designer & Front-end Engineer</title>
-    <link rel="stylesheet" href="style.css">
-    
+    <title>Anduru</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <canvas id="cursor-canvas"></canvas>
-    <div class="container">
-        <div class="left-section">
-            <h1>Mitchelle Anduru</h1>
-            <h2>UI/UX Designer & Full-stack Engineer</h2>
-            <p class="subtitle">I design and build intuitive, pixel-perfect, and user-centered digital experiences for the web.</p>
+    <div class="stars" id="stars"></div>
 
-            <nav class="navigation">
-                <ul class="navigation__links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#experiences">Experiences</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <!--Header-->
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="logo">Andy</a>
 
-            <div class="social-links">
-                <a href="http://tiktok.com/@heyy.anduru"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
-                <a href="https://github.com/iamanduru"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <!-- toggle button -->
+            <button class="nav__toggle" aria-label="Open menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav__links">
+                <a href="#aprojects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <div class="content__wrapper">
-            <div class="about__section" id="about">
-                <div class="content">
-                    <p>Wagwan! I’m a Full-Stack Engineer & UI/UX Designer who codes like an architect and designs like your favorite app wasn’t frustrating.</p>
-                    
-                    <p>With a cross-functional toolkit in React, Node.js, MySQL, Figma, and Tailwind CSS, I build scalable web apps that don’t just work—they make sense. I care deeply about inclusive design, clean architecture, and writing code your future self won’t want to fight.</p>
-                    <p>When I’m not turning chaos into user-first interfaces, I’m mentoring budding techies (some fresh out of tutorial hell), hosting a podcast about mental health and emotional debugging, or trying to beat my personal best at the gym—and in time management (still in beta).</p>
-                    <p>Let’s just say: if it’s digital, I want to make it smarter, smoother, and slightly more human.Let’s build things that don’t make users rage-quit.</p>
-                </div>
-            </div>
-    
-            <div class="experience__section" id="experiences">
-                <div class="experience__container">
-                    <div class="experience__item">
-                        <div class="experience__header" data-target="somto__details">
-                            <span class="company">SOMTO – Karoline Aadland’s Minnestiftelse </span>
-                            <span class="divider">|</span>
-                            <span class="role">Volunteer</span>
-                        </div>
-                        <div class="experience__details" id="somto__details">
-                            <div class="date">June 2023 - August 2024</div>
-                            <ul>
-                                <li>Organized and coordinated a free eye check-up camp in Kisumu, managing logistics and medical professionals</li>
-                                <li>Developed and conducted technical training programs in HTML, CSS, and JavaScript for young girls in Kibra</li>
-                                <li>Redesigned and enhanced SOMTO's website and newsletter systems to improve user experience and functionality</li> 
-                            </ul>
-                        </div>
-                    </div>
-    
-                    <div class="experience__item">
-                        <div class="experience__header" data-target="spiderbit__details">
-                            <span class="company">Spiderbit</span>
-                            <span class="divider">|</span>
-                            <span class="role">Web Developer & Design Intern</span>
-                        </div>
-                        <div class="experience__details" id="spiderbit__details">
-                            <div class="date">September 2024 - December 2024</div>
-                            <ul>
-                                <li>Built and maintained responsive websites aligned with modern UI/UX standards.</li>
-                                <li>Collaborated with product teams to deliver user-first features and micro-interactions.</li>
-                                <li>Conducted iterative usability testing to drive continuous improvement and user satisfaction.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="experience__item">
-                        <div class="experience__header" data-target="vfr__details">
-                            <span class="company">Vision Fund Rwanda</span>
-                            <span class="divider">|</span>
-                            <span class="role">Software Developer Intern</span>
-                        </div>
-                        <div class="experience__details" id="vfr__details">
-                            <div class="date">April 2025 - To Current</div>
-                            <ul>
-                                <li>Developed and deployed a full-stack Inventory Management System, improving asset tracking efficiency.</li>
-                                <li>Migrated backend architecture from MongoDB to MySQL, optimizing database performance and query speed.</li>
-                                <li>Designed secure authentication and user access controls using Node.js, Express.js, and JWT.</li>
-                                <li>Built intuitive, mobile-responsive frontend interfaces using React and Tailwind CSS.</li>
-                                <li>Currently leading development of a Payroll Management System automating salary, tax, and deduction workflows.</li>
-                                <li>Supported IT operations by configuring hardware and system setups for internal staff.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!--Main container-->
+    <section class="main__container">
+        <h1 class="main__title">Creating human-centered experiences, one line at a time.</h1>
 
-            <div class="tech__stack__section" id="tech-stack">
-                <h2 class="tech__stack__title">Tech Stack & Tools</h2>
-                <div class="tech__stack__container">
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">Languages & Frameworks</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">HTML5</span>
-                            <span class="tech__item">CSS2</span>
-                            <span class="tech__item">Javascript(ES6+)</span>
-                            <span class="tech__item">TypeScript</span>
-                            <span class="tech__item">Python</span>
-                            <span class="tech__item">Java</span>
-                        </div>
-                    </div>
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">Frontend Development</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">React.js</span>
-                            <span class="tech__item">Next.js</span>
-                            <span class="tech__item">TailwindCSS</span>
-                            <span class="tech__item">Responsive Design</span>
-                        </div>
-                    </div>
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">Backend & Database</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">MySQL</span>
-                            <span class="tech__item">MongoDB</span>
-                            <span class="tech__item">Node.js</span>
-                            <span class="tech__item">FastAPI</span>
-                            <span class="tech__item">RESTful APIs</span>
-                            <span class="tech__item">Express.js</span>
-                            <span class="tech__item">Oracle</span>
-                            <span class="tech__item">Prisma ORM</span>
-                        </div>
-                    </div>
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">Clouds & DevOps</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">AWS</span>
-                            <span class="tech__item">Docker</span>
-                            <span class="tech__item">GitHub</span>
-                        </div>
-                    </div>
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">UI/UX Design</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">Figma</span>
-                            <span class="tech__item">Wireframing</span>
-                            <span class="tech__item">Prototyping</span>
-                            <span class="tech__item">Inclusive Design</span>
-                            <span class="tech__item">Usability Testing</span>
-                        </div>
-                    </div>
-                    <div class="tech__stack__category">
-                        <div class="tech__stack__category__title">Quality Assurance & Testing</div>
-                        <div class="tech__stack__items">
-                            <span class="tech__item">Manual Testing</span>
-                            <span class="tech__item">Test Case Design</span>
-                            <span class="tech__item">Bug Tracking</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!--Social Icons-->
+        <div class="social__icons">
+        <!-- GitHub -->
+        <a href="https://github.com/iamanduru" class="social__icon" target="_blank" aria-label="GitHub">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.26.82-.577v-2.234c-3.338.727-4.033-1.416-4.033-1.416-.546-1.385-1.333-1.754-1.333-1.754-1.09-.745.082-.729.082-.729 1.204.084 1.838 1.237 1.838 1.237 1.07 1.835 2.807 1.305 3.492.998.108-.775.42-1.305.762-1.604-2.665-.305-5.47-1.334-5.47-5.931 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.49 11.49 0 0 1 6.003 0c2.29-1.552 3.297-1.23 3.297-1.23.654 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.222.694.829.576C20.565 21.796 24 17.298 24 12c0-6.63-5.373-12-12-12z"/>
+            </svg>
+        </a>
 
-            <section class="education__section section" id="education">
-                <div class="section__title">
-                    <h2>Education and Certifications</h2>
-                </div>
-                <div class="education__container">
-                    <div class="education__item">
-                        <div class="education__header" data-target="auca__details">
-                            <span class="institution">Adventist University of Central Africa (AUCA)</span>
-                            <span class="divider">|</span>
-                            <span class="degree">Bachelor of Information Technology (Software Engineering)</span>
-                        </div>
-                        <div class="education__details" id="auca__details">
-                            <div class="date">2022- Present</div>
-                            <ul>
-                                <li>Focusing on software design principles, data structures, and algorithm development</li>
-                                <li>Participating in collaborative programming projects and hackathons</li>
-                                <li>Developing full-stack applications using modern frameworks and technologies</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="education__item">
-                        <div class="education__header" data-target="moringa__details">
-                            <span class="institution">Moringa School</span>
-                            <span class="divider">|</span>
-                            <span class="degree">Product Design UI/UX</span>
-                        </div>
-                        <div class="education__details" id="moringa__details">
-                            <div class="date">July 2024 - Jan 2025</div>
-                            <ul>
-                                <li>Mastering user research methodologies and information architecture</li>
-                                <li>Creating user-centered designs using industry-standard tools</li>
-                                <li>Implementing responsive design principles and accessibility standards</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="education__item">
-                        <div class="education__header" data-target="cisco__details">
-                            <span class="institution">Cisco</span>
-                            <span class="divider">|</span>
-                            <span class="degree">Computer Networking Essentials</span>
-                        </div>
-                        <div class="education__details" id="cisco__details">
-                            <div class="date">January 2024 - April 2024</div>
-                            <ul>
-                                <li>Gained hands-on experience with network configuration and troubleshooting</li>
-                                <li>Studied TCP/IP protocols and network security fundamentals</li>
-                                <li>Applied routing and switching concepts in practical lab environments</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="education__item">
-                        <div class="education__header" data-target="aws__details">
-                            <span class="institution">Amazon Web Services</span>
-                            <span class="divider">|</span>
-                            <span class="degree">AWS Certified Cloud Practitioner</span>
-                        </div>
-                        <div class="education__details" id="aws__details">
-                            <div class="date">2023</div>
-                            <ul>
-                                <li>Mastered cloud computing concepts and AWS core services</li>
-                                <li>Learned cloud security best practices and compliance frameworks</li>
-                                <li>Developed understanding of cloud economics and billing models</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@heyy.anduru?_t=ZM-8yGZshinSqc&_r=1" class="social__icon" target="_blank" aria-label="TikTok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.85 0H9.52v16.73c-.2.03-.4.04-.61.04a3.66 3.66 0 1 1 3.65-3.65h3.32a7 7 0 1 0-7.36 7c1.66 0 3.18-.6 4.35-1.59v1.43h3.33V7.78h-3.33v1.35A7 7 0 0 1 12.85 0Z"/>
+            </svg>
+        </a>
     </div>
 
 
-    <script src="index.js">
-        
-    </script>
+        <!--Quotes-->
+        <div class="quote__grid">
+            <div class="quote__card">
+                <div class="quote__text">“Writing code, building dreams, dodging burnout — one deep breath (and deadline) at a time.”</div>
+            </div>
+            <div class="quote__card">
+                <div class="quote__text">“I’m just here trying to live softly, love loudly, and not ghost my to-do list.”</div>
+            </div>
+            <div class="quote__card">
+                <div class="quote__text">“Healing, laughing, working... sometimes all in one afternoon.”</div>
+            </div>
+            <div class="quote__card">
+                <div class="quote__text">“Life’s a group project. Choose your teammates wisely and bring snacks”</div>
+            </div>
+            <div class="quote__card">
+                <div class="quote__text">“Protect your peace, text your people, drink your coffee, and mind your own business like it pays rent.”</div>
+            </div>
+        </div>
+
+        <!-- Description -->
+        <p class="description">
+            Wagwan! I’m a Full-Stack Engineer & UI/UX Designer building clean, scalable apps with React, Node.js, MySQL, Figma, and Tailwind. I care about inclusive design, smooth UX, and code that ages well. When I’m not coding, I mentor devs and podcast on mental health.
+        </p>
+    </section>
+    <section class="tech__stack">
+        <h2 class="tech__title">Tech Stack</h2>
+
+        <!-- Tech stack grid -->
+        <div class="tech-grid">
+            <!-- Languages & Frameworks -->
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">🎨</div>
+                <div class="tech-name">CSS3</div>
+            </div>
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">🌐</div>
+                <div class="tech-name">HTML5</div>
+            </div>
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">☕</div>
+                <div class="tech-name">Java</div>
+            </div>
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">⚡</div>
+                <div class="tech-name">JavaScript</div>
+            </div>
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">🐍</div>
+                <div class="tech-name">Python</div>
+            </div>
+            <div class="tech-card" data-category="Languages & Frameworks">
+                <div class="tech-icon">📘</div>
+                <div class="tech-name">TypeScript</div>
+            </div>
+            
+            <!-- Frontend -->
+            <div class="tech-card" data-category="Frontend">
+                <div class="tech-icon">▲</div>
+                <div class="tech-name">Next.js</div>
+            </div>
+            <div class="tech-card" data-category="Frontend">
+                <div class="tech-icon">⚛️</div>
+                <div class="tech-name">React.js</div>
+            </div>
+            <div class="tech-card" data-category="Frontend">
+                <div class="tech-icon">📱</div>
+                <div class="tech-name">Responsive</div>
+            </div>
+            <div class="tech-card" data-category="Frontend">
+                <div class="tech-icon">🎯</div>
+                <div class="tech-name">Tailwind</div>
+            </div>
+            
+            <!-- Backend & Databases -->
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">🚀</div>
+                <div class="tech-name">Express.js</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">⚡</div>
+                <div class="tech-name">FastAPI</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">🍃</div>
+                <div class="tech-name">MongoDB</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">🐬</div>
+                <div class="tech-name">MySQL</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">💚</div>
+                <div class="tech-name">Node.js</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">🔷</div>
+                <div class="tech-name">Prisma</div>
+            </div>
+            <div class="tech-card" data-category="Backend & Databases">
+                <div class="tech-icon">🔗</div>
+                <div class="tech-name">REST API</div>
+            </div>
+            
+            <!-- Cloud & DevOps -->
+            <div class="tech-card" data-category="Cloud & DevOps">
+                <div class="tech-icon">☁️</div>
+                <div class="tech-name">AWS</div>
+            </div>
+            <div class="tech-card" data-category="Cloud & DevOps">
+                <div class="tech-icon">🔧</div>
+                <div class="tech-name">Git</div>
+            </div>
+            <div class="tech-card" data-category="Cloud & DevOps">
+                <div class="tech-icon">🐙</div>
+                <div class="tech-name">GitHub</div>
+            </div>
+            
+            <!-- UX/UI Design -->
+            <div class="tech-card" data-category="UX/UI Design">
+                <div class="tech-icon">🎨</div>
+                <div class="tech-name">Figma</div>
+            </div>
+            <div class="tech-card" data-category="UX/UI Design">
+                <div class="tech-icon">♿</div>
+                <div class="tech-name">Inclusive</div>
+            </div>
+            <div class="tech-card" data-category="UX/UI Design">
+                <div class="tech-icon">🖼️</div>
+                <div class="tech-name">Prototyping</div>
+            </div>
+            <div class="tech-card" data-category="UX/UI Design">
+                <div class="tech-icon">👥</div>
+                <div class="tech-name">User Testing</div>
+            </div>
+            <div class="tech-card" data-category="UX/UI Design">
+                <div class="tech-icon">📐</div>
+                <div class="tech-name">Wireframing</div>
+            </div>
+            
+            <!-- Tools & Technologies -->
+            <div class="tech-card" data-category="Tools & Technologies">
+                <div class="tech-icon">🐳</div>
+                <div class="tech-name">Docker</div>
+            </div>
+            <div class="tech-card" data-category="Tools & Technologies">
+                <div class="tech-icon">📮</div>
+                <div class="tech-name">Postman</div>
+            </div>
+            <div class="tech-card" data-category="Tools & Technologies">
+                <div class="tech-icon">💻</div>
+                <div class="tech-name">VS Code</div>
+            </div>
+            
+            <!-- Soft Skills -->
+            <div class="tech-card" data-category="Soft Skills">
+                <div class="tech-icon">🔄</div>
+                <div class="tech-name">Adaptable</div>
+            </div>
+            <div class="tech-card" data-category="Soft Skills">
+                <div class="tech-icon">🤝</div>
+                <div class="tech-name">Collaborate</div>
+            </div>
+            <div class="tech-card" data-category="Soft Skills">
+                <div class="tech-icon">💬</div>
+                <div class="tech-name">Communicate</div>
+            </div>
+            <div class="tech-card" data-category="Soft Skills">
+                <div class="tech-icon">🧠</div>
+                <div class="tech-name">Critical Think</div>
+            </div>
+            <div class="tech-card" data-category="Soft Skills">
+                <div class="tech-icon">❤️</div>
+                <div class="tech-name">Empathy</div>
+            </div>
+        </div>
+
+         <!-- Central device mockup -->
+        <div class="device-container">
+        <div class="device-mockup">
+            <div class="device-screen">
+            <div class="device-logo"></div>
+            <div class="device-text" id="roleText"></div>
+            <div class="device-dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+    </section>
+    <!-- Floating particles -->
+    <div class="particle" style="top: 20%; left: 10%; animation-delay: 0s;"></div>
+    <div class="particle" style="top: 60%; left: 80%; animation-delay: 2s;"></div>
+    <div class="particle" style="top: 40%; left: 20%; animation-delay: 4s;"></div>
+    <div class="particle" style="top: 80%; left: 60%; animation-delay: 1s;"></div>
+    <div class="particle" style="top: 30%; left: 90%; animation-delay: 3s;"></div>
+
+    <div class="floating-shapes">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <section class="projects" id="projects">
+        <div class="carousel__container">
+        <div class="carousel__header">
+            <h1>Projects</h1>
+            <p>A showcase of innovative web applications and creative solutions</p>
+        </div>
+
+        <div class="carousel">
+            <div class="carousel__track" id="carouselTrack">
+                <!-- Projects will be dynamically inserted here -->
+            </div>
+        </div>
+
+        <div class="carousel__nav">
+            <button class="nav-btn" id="prevBtn">←</button>
+            <button class="nav-btn" id="nextBtn">→</button>
+        </div>
+
+        <div class="carousel__indicators" id="indicators">
+            <!-- Indicators will be dynamically inserted here -->
+        </div>
+    </div>
+    </section>
+    
+    <section class="contact__section" id="contact">
+        <h2 class="contact__title">Feel free to fill up your details, I will reach out to you asap</h2>
+        <p class="contact__subtitle">Ready to bring your next project to life? Let's discuss your ideas and create something amazing together.</p>
+
+        <form action="" class="contact__form" id="contactForm">
+            <div class="form__group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="e.g Mitchelle Anduru" required>
+            </div>
+
+            <div class="form__group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="e.g your@example.com" required>
+            </div>
+
+            <div class="form__group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form__group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" placeholder="Tell me about your project...." required></textarea>
+            </div>
+
+            <button class="submit__btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Anduru. All rights reserved.</p>
+    </footer>
+    <script src="./index.js"></script>
 </body>
 </html>
