@@ -133,7 +133,7 @@ window.addEventListener('load', function() {
 //Project Data
 const projects = [
   {
-    icon: '🔒🎬',
+    icon: '🔒',
     title: 'Secure M-Pesa Auth System',
     description: 'A secure and scalable M-Pesa-powered authentication system built for a film streaming platform. It ensures only verified, paying users access content — no shared links, no loopholes — just smooth, locked-down viewing.',
     technologies: ['Node.js', 'Express.js', ' Safaricom M-Pesa API (STK Push, Paybill/Till)', 'MySQL', 'Prisma', 'HTML', 'CSS', 'Javascript', ' UUIDv4 Tokens', 'Swagger Documentation'],
