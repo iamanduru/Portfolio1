@@ -153,8 +153,8 @@ const projects = [
     title: 'Therapist Portfolio Website',
     description: 'A clean, calming, and responsive portfolio website built for a therapist client to showcase their services, approach, and booking info. Designed to reflect emotional safety and professional warmth, with soft animations and accessible design choices',
     technologies: ['HTML', 'CSS', 'Javascript', 'Animate CSS' ],
-    demoLink: '',
-    codeLink: ''
+    demoLink: 'https://therapist101.netlify.app/',
+    codeLink: 'https://github.com/iamanduru/Therapist'
   },
   {
     icon: '⚙️',
