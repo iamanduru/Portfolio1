@@ -153,9 +153,26 @@ const projects = [
     title: 'Therapist Portfolio Website',
     description: 'A clean, calming, and responsive portfolio website built for a therapist client to showcase their services, approach, and booking info. Designed to reflect emotional safety and professional warmth, with soft animations and accessible design choices',
     technologies: ['HTML', 'CSS', 'Javascript', 'Animate CSS' ],
-    demoLink: 'https://iamanduru.github.io/Connie/',
-    codeLink: 'https://github.com/iamanduru/Connie'
-  }
+    demoLink: '',
+    codeLink: ''
+  },
+  {
+    icon: '⚙️',
+    title: 'Cursor Ripple',
+    description: 'Interactive cursor ripple animation using HTML5 Canvas, CSS, and JavaScript. Lightweight, customizable, and perfect for enhancing user experience via particle‐trail effects that follow the mouse cursor.',
+    technologies: ['HTML', 'CSS', 'Javascript', 'Animate CSS' ],
+    demoLink: 'https://iamanduru.github.io/cursor-ripple/',
+    codeLink: 'https://github.com/iamanduru/cursor-ripple'
+  },
+  {
+  "icon": "🏥",
+  "title": "SerenityCare Clinic Website",
+  "description": "A modern, patient-focused healthcare website designed for SerenityCare Clinic. Features include a welcoming hero section, detailed service categories with subcategories, team profiles, vision & mission statements, and a strong 'Why Choose Us' section. The site is built to provide clear information, enhance trust, and improve patient engagement with responsive design and user-friendly navigation.",
+  "technologies": ["HTML5", "CSS3", "JavaScript", "animated.css"],
+  "demoLink": "https://serenitycare.netlify.app/",
+  "codeLink": "https://github.com/iamanduru/SerenityCare"
+},
+
 ];
 
 class ProjectCarousel {
