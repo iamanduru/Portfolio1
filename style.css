@@ -383,17 +383,17 @@ body {
 /* Tech stack grid */
 .tech-grid {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 15px;
     margin-bottom: 80px;
-    max-width: 800px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    animation: fadeInUp 1s ease-out 0.2s both;
 }
 
+/* Individual cards */
 .tech-card {
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -410,107 +410,42 @@ body {
 }
 
 .tech-card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-5px) scale(1.03);
+    background: rgba(255, 255, 255, 0.14);
     border-color: #00d4ff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+/* Icon wrapper */
 .tech-icon {
-    font-size: 24px;
     margin-bottom: 4px;
-    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Actual icon size (Devicon + Font Awesome) */
+.tech-icon i {
+    font-size: 26px;
+}
+
+/* Tech label */
 .tech-name {
-    font-size: 10px;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.85);
     text-align: center;
     line-height: 1.2;
 }
 
-/* Central device mockup */
-.device-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 80px 0;
-    animation: fadeInUp 1s ease-out 0.4s both;
+.tech-card:nth-child(odd) {
+    animation-delay: 0.1s;
 }
 
-.device-mockup {
-    width: 300px;
-    height: 180px;
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 15px;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
+.tech-card:nth-child(even) {
+    animation-delay: 0.2s;
 }
 
-.device-screen {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.device-logo {
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-    animation: pulse 2s infinite;
-}
-
-.device-logo::before {
-    content: '⚡';
-    font-size: 20px;
-    color: white;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-}
-
-.device-text {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 12px;
-    margin-bottom: 8px;
-}
-
-.device-dots {
-    display: flex;
-    gap: 6px;
-}
-
-.dot {
-    width: 4px;
-    height: 4px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    animation: dotPulse 1.5s infinite;
-}
-
-.dot:nth-child(2) { animation-delay: 0.3s; }
-.dot:nth-child(3) { animation-delay: 0.6s; }
-
-@keyframes dotPulse {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
-}
 
 /*Contact*/
 .contact__section {
@@ -529,7 +464,7 @@ body {
   font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #64ffda, #1de9b6);
+  background: #fff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -729,6 +664,7 @@ body {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
 .project-card::before {
@@ -737,7 +673,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 20px;
   background: rgba(0, 212, 255, 0.5);
   transform: scaleX(0);
   transition: transform 0.4s ease;
@@ -747,10 +683,11 @@ body {
     transform: scaleX(1);
 }
 
+
 .project-card:hover {
-    transform: translateY(-10px) scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
-    border-color: rgba(0, 212, 255, 0.5);
+  transform: translateY(-4px); /* was -10px scale(1.02) */
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  border-color: rgba(148, 163, 184, 0.7); /* softer slate-ish border */
 }
 
 .project-icon {
@@ -764,6 +701,10 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
   animation: pulse 2s infinite;
+}
+
+.project-icon i {
+  font-size: 26px;
 }
 
 @keyframes pulse {

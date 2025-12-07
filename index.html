@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anduru</title>
     <link rel="stylesheet" href="./style.css">
+    <!-- Animate.css -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- Devicon for tech logos -->
+<link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+
+<!-- Font Awesome for generic icons -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+
 </head>
 <body>
     <div class="stars" id="stars"></div>
@@ -20,15 +33,16 @@
             </button>
 
             <div class="nav__links">
-                <a href="#aprojects">Projects</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
+                <a href="./img/Mitchelle Anduru.pdf" target="_blank">CV</a>
             </div>
         </nav>
     </header>
 
     <!--Main container-->
     <section class="main__container">
-        <h1 class="main__title">Creating human-centered experiences, one line at a time.</h1>
+        <h1 class="main__title">Creating systems that are intuitive, secure, and actually enjoyable.</h1>
 
         <!--Social Icons-->
         <div class="social__icons">
@@ -69,175 +83,288 @@
 
         <!-- Description -->
         <p class="description">
-            Wagwan! I’m a Full-Stack Engineer & UI/UX Designer building clean, scalable apps with React, Node.js, MySQL, Figma, and Tailwind. I care about inclusive design, smooth UX, and code that ages well. When I’m not coding, I mentor devs and podcast on mental health.
+            Wagwan! I'm Anduru, a design-led Full-Stack Engineer passionate about building intuitive, secure, and scalable digital products. 
+            Skilled across frontend, backend, and cloud technologies with a strong foundation in UI/UX, system design, and digital forensics. 
+            I build with intention, clean architecture, human-centered design, and purposeful innovation.
+        </p>
+        <br>
+        <p class="description">
+            I am dedicated to empowering users through inclusive technology and continuous learning, blending engineering excellence with empathy, security, and creativity.
         </p>
     </section>
     <section class="tech__stack">
         <h2 class="tech__title">Tech Stack</h2>
 
         <!-- Tech stack grid -->
-        <div class="tech-grid">
-            <!-- Languages & Frameworks -->
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">🎨</div>
-                <div class="tech-name">CSS3</div>
+    <div class="tech-grid animate__animated animate__fadeInUp">
+        <!-- Languages & Frameworks -->
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-javascript-plain colored"></i>
             </div>
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">🌐</div>
-                <div class="tech-name">HTML5</div>
+            <div class="tech-name">JavaScript (ES6+)</div>
+        </div>
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-typescript-plain colored"></i>
             </div>
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">☕</div>
-                <div class="tech-name">Java</div>
+            <div class="tech-name">TypeScript</div>
+        </div>
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-java-plain colored"></i>
             </div>
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">⚡</div>
-                <div class="tech-name">JavaScript</div>
+            <div class="tech-name">Java</div>
+        </div>
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-python-plain colored"></i>
             </div>
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">🐍</div>
-                <div class="tech-name">Python</div>
+            <div class="tech-name">Python</div>
+        </div>
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-html5-plain colored"></i>
             </div>
-            <div class="tech-card" data-category="Languages & Frameworks">
-                <div class="tech-icon">📘</div>
-                <div class="tech-name">TypeScript</div>
+            <div class="tech-name">HTML5</div>
+        </div>
+        <div class="tech-card" data-category="Languages & Frameworks">
+            <div class="tech-icon">
+                <i class="devicon-css3-plain colored"></i>
             </div>
-            
-            <!-- Frontend -->
-            <div class="tech-card" data-category="Frontend">
-                <div class="tech-icon">▲</div>
-                <div class="tech-name">Next.js</div>
-            </div>
-            <div class="tech-card" data-category="Frontend">
-                <div class="tech-icon">⚛️</div>
-                <div class="tech-name">React.js</div>
-            </div>
-            <div class="tech-card" data-category="Frontend">
-                <div class="tech-icon">📱</div>
-                <div class="tech-name">Responsive</div>
-            </div>
-            <div class="tech-card" data-category="Frontend">
-                <div class="tech-icon">🎯</div>
-                <div class="tech-name">Tailwind</div>
-            </div>
-            
-            <!-- Backend & Databases -->
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">🚀</div>
-                <div class="tech-name">Express.js</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">⚡</div>
-                <div class="tech-name">FastAPI</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">🍃</div>
-                <div class="tech-name">MongoDB</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">🐬</div>
-                <div class="tech-name">MySQL</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">💚</div>
-                <div class="tech-name">Node.js</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">🔷</div>
-                <div class="tech-name">Prisma</div>
-            </div>
-            <div class="tech-card" data-category="Backend & Databases">
-                <div class="tech-icon">🔗</div>
-                <div class="tech-name">REST API</div>
-            </div>
-            
-            <!-- Cloud & DevOps -->
-            <div class="tech-card" data-category="Cloud & DevOps">
-                <div class="tech-icon">☁️</div>
-                <div class="tech-name">AWS</div>
-            </div>
-            <div class="tech-card" data-category="Cloud & DevOps">
-                <div class="tech-icon">🔧</div>
-                <div class="tech-name">Git</div>
-            </div>
-            <div class="tech-card" data-category="Cloud & DevOps">
-                <div class="tech-icon">🐙</div>
-                <div class="tech-name">GitHub</div>
-            </div>
-            
-            <!-- UX/UI Design -->
-            <div class="tech-card" data-category="UX/UI Design">
-                <div class="tech-icon">🎨</div>
-                <div class="tech-name">Figma</div>
-            </div>
-            <div class="tech-card" data-category="UX/UI Design">
-                <div class="tech-icon">♿</div>
-                <div class="tech-name">Inclusive</div>
-            </div>
-            <div class="tech-card" data-category="UX/UI Design">
-                <div class="tech-icon">🖼️</div>
-                <div class="tech-name">Prototyping</div>
-            </div>
-            <div class="tech-card" data-category="UX/UI Design">
-                <div class="tech-icon">👥</div>
-                <div class="tech-name">User Testing</div>
-            </div>
-            <div class="tech-card" data-category="UX/UI Design">
-                <div class="tech-icon">📐</div>
-                <div class="tech-name">Wireframing</div>
-            </div>
-            
-            <!-- Tools & Technologies -->
-            <div class="tech-card" data-category="Tools & Technologies">
-                <div class="tech-icon">🐳</div>
-                <div class="tech-name">Docker</div>
-            </div>
-            <div class="tech-card" data-category="Tools & Technologies">
-                <div class="tech-icon">📮</div>
-                <div class="tech-name">Postman</div>
-            </div>
-            <div class="tech-card" data-category="Tools & Technologies">
-                <div class="tech-icon">💻</div>
-                <div class="tech-name">VS Code</div>
-            </div>
-            
-            <!-- Soft Skills -->
-            <div class="tech-card" data-category="Soft Skills">
-                <div class="tech-icon">🔄</div>
-                <div class="tech-name">Adaptable</div>
-            </div>
-            <div class="tech-card" data-category="Soft Skills">
-                <div class="tech-icon">🤝</div>
-                <div class="tech-name">Collaborate</div>
-            </div>
-            <div class="tech-card" data-category="Soft Skills">
-                <div class="tech-icon">💬</div>
-                <div class="tech-name">Communicate</div>
-            </div>
-            <div class="tech-card" data-category="Soft Skills">
-                <div class="tech-icon">🧠</div>
-                <div class="tech-name">Critical Think</div>
-            </div>
-            <div class="tech-card" data-category="Soft Skills">
-                <div class="tech-icon">❤️</div>
-                <div class="tech-name">Empathy</div>
-            </div>
+            <div class="tech-name">CSS3</div>
         </div>
 
-         <!-- Central device mockup -->
-        <div class="device-container">
-        <div class="device-mockup">
-            <div class="device-screen">
-            <div class="device-logo"></div>
-            <div class="device-text" id="roleText"></div>
-            <div class="device-dots">
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+        <!-- Frontend -->
+        <div class="tech-card" data-category="Frontend">
+            <div class="tech-icon">
+                <i class="devicon-react-original colored"></i>
             </div>
+            <div class="tech-name">React.js</div>
+        </div>
+        <div class="tech-card" data-category="Frontend">
+            <div class="tech-icon">
+                <i class="devicon-nextjs-original"></i>
             </div>
+            <div class="tech-name">Next.js</div>
         </div>
+        <div class="tech-card" data-category="Frontend">
+            <div class="tech-icon">
+                <i class="devicon-tailwindcss-original colored"></i>
+            </div>
+            <div class="tech-name">Tailwind CSS</div>
         </div>
+        <div class="tech-card" data-category="Frontend">
+            <div class="tech-icon">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+            <div class="tech-name">Responsive Design</div>
+        </div>
+        <div class="tech-card" data-category="Frontend">
+            <div class="tech-icon">
+                <i class="fa-solid fa-palette"></i>
+            </div>
+            <div class="tech-name">UI/UX Principles</div>
+        </div>
+
+        <!-- Backend & Databases -->
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="tech-name">Node.js</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-express-original"></i>
+            </div>
+            <div class="tech-name">Express.js</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-prisma-original colored"></i>
+            </div>
+            <div class="tech-name">Prisma ORM</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-fastapi-plain colored"></i>
+            </div>
+            <div class="tech-name">FastAPI</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-mysql-original colored"></i>
+            </div>
+            <div class="tech-name">MySQL</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="devicon-mongodb-plain colored"></i>
+            </div>
+            <div class="tech-name">MongoDB</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="tech-name">REST APIs</div>
+        </div>
+        <div class="tech-card" data-category="Backend & Databases">
+            <div class="tech-icon">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <div class="tech-name">SQL Design</div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="devicon-amazonwebservices-original colored"></i>
+            </div>
+            <div class="tech-name">AWS (Cloud Practitioner)</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="fa-solid fa-infinity"></i>
+            </div>
+            <div class="tech-name">CI/CD</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="devicon-docker-plain colored"></i>
+            </div>
+            <div class="tech-name">Docker</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="devicon-git-plain colored"></i>
+            </div>
+            <div class="tech-name">Git</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="devicon-github-original"></i>
+            </div>
+            <div class="tech-name">GitHub</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="devicon-linux-plain"></i>
+            </div>
+            <div class="tech-name">Linux</div>
+        </div>
+        <div class="tech-card" data-category="Cloud & DevOps">
+            <div class="tech-icon">
+                <i class="fa-solid fa-boxes-stacked"></i>
+            </div>
+            <div class="tech-name">Containers</div>
+        </div>
+
+        <!-- UX/UI Design -->
+        <div class="tech-card" data-category="UX/UI Design">
+            <div class="tech-icon">
+                <i class="devicon-figma-plain colored"></i>
+            </div>
+            <div class="tech-name">Figma</div>
+        </div>
+        <div class="tech-card" data-category="UX/UI Design">
+            <div class="tech-icon">
+                <i class="fa-regular fa-square"></i>
+            </div>
+            <div class="tech-name">Wireframes</div>
+        </div>
+        <div class="tech-card" data-category="UX/UI Design">
+            <div class="tech-icon">
+                <i class="fa-regular fa-object-group"></i>
+            </div>
+            <div class="tech-name">Prototyping</div>
+        </div>
+        <div class="tech-card" data-category="UX/UI Design">
+            <div class="tech-icon">
+                <i class="fa-solid fa-vial-circle-check"></i>
+            </div>
+            <div class="tech-name">Usability Testing</div>
+        </div>
+        <div class="tech-card" data-category="UX/UI Design">
+            <div class="tech-icon">
+                <i class="fa-solid fa-universal-access"></i>
+            </div>
+            <div class="tech-name">Accessibility & Inclusive Design</div>
+        </div>
+
+        <!-- Tools & Technologies -->
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="devicon-postman-plain colored"></i>
+            </div>
+            <div class="tech-name">Postman</div>
+        </div>
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="devicon-vscode-plain colored"></i>
+            </div>
+            <div class="tech-name">VS Code</div>
+        </div>
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="devicon-jira-plain colored"></i>
+            </div>
+            <div class="tech-name">Jira</div>
+        </div>
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="devicon-arduino-plain colored"></i>
+            </div>
+            <div class="tech-name">Arduino</div>
+        </div>
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="tech-name">TinyML</div>
+        </div>
+        <div class="tech-card" data-category="Tools & Technologies">
+            <div class="tech-icon">
+                <i class="devicon-python-plain colored"></i>
+            </div>
+            <div class="tech-name">Python ML Libraries</div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="tech-card" data-category="Soft Skills">
+            <div class="tech-icon">
+                <i class="fa-solid fa-arrows-rotate"></i>
+            </div>
+            <div class="tech-name">Adaptability</div>
+        </div>
+        <div class="tech-card" data-category="Soft Skills">
+            <div class="tech-icon">
+                <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+            <div class="tech-name">Collaboration</div>
+        </div>
+        <div class="tech-card" data-category="Soft Skills">
+            <div class="tech-icon">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <div class="tech-name">Communication</div>
+        </div>
+        <div class="tech-card" data-category="Soft Skills">
+            <div class="tech-icon">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="tech-name">Critical Thinking</div>
+        </div>
+        <div class="tech-card" data-category="Soft Skills">
+            <div class="tech-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="tech-name">Empathy</div>
+        </div>
+    </div>
+
+         
 
 
     </section>
@@ -279,33 +406,42 @@
     </section>
     
     <section class="contact__section" id="contact">
-        <h2 class="contact__title">Feel free to fill up your details, I will reach out to you asap</h2>
-        <p class="contact__subtitle">Ready to bring your next project to life? Let's discuss your ideas and create something amazing together.</p>
+  <h2 class="contact__title">Feel free to fill up your details, I will reach out to you asap</h2>
+  <p class="contact__subtitle">
+    Ready to bring your next project to life? Let's discuss your ideas and create something amazing together.
+  </p>
 
-        <form action="" class="contact__form" id="contactForm">
-            <div class="form__group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="e.g Mitchelle Anduru" required>
-            </div>
+  <form action="https://formspree.io/f/xovgnapw" method="POST" class="contact__form" id="contactForm">
+    <div class="form__group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g Mitchelle Anduru" required>
+    </div>
 
-            <div class="form__group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="e.g your@example.com" required>
-            </div>
+    <div class="form__group">
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="e.g your@example.com" required>
+    </div>
 
-            <div class="form__group">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required>
-            </div>
+    <div class="form__group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required>
+    </div>
 
-            <div class="form__group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" placeholder="Tell me about your project...." required></textarea>
-            </div>
+    <div class="form__group">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" placeholder="Tell me about your project...." required></textarea>
+    </div>
 
-            <button class="submit__btn" type="submit">Send Message</button>
-        </form>
-    </section>
+    <!-- Optional: let Formspree know what subject to use in the email -->
+    <input type="hidden" name="_subject" value="New message from portfolio contact form">
+
+    <!-- Optional: redirect after submit -->
+    <!-- <input type="hidden" name="_redirect" value="https://your-portfolio-url.com/thank-you.html"> -->
+
+    <button class="submit__btn" type="submit">Send Message</button>
+  </form>
+</section>
+
 
     <footer class="footer">
         <p>&copy; 2025 Anduru. All rights reserved.</p>
