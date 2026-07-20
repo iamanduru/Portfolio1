@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
   "Secure Systems Builder",
   "Cybersecurity & DigitalForensics Aspirant",
   "Digital Problem Solver",
-  "Backend & Web Solutions Developer",
+  "Founder of Ethera",
   "Tech Mentor"
 ];
 
